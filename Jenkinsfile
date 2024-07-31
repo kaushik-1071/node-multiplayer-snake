@@ -23,6 +23,12 @@ node ('ubuntu'){
          sh "docker-compose down"
          sh "docker-compose up -d"	
       }
+    
+    stage('Shutting down app') {
+    
+         sh "docker-compose down"
+         //sh "docker-compose up -d"	
+      }
  
 }
 
